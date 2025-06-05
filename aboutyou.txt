@@ -1,1 +1,1 @@
-hey there I am leaning conflict feature in GitHub
+I’m learning Git from both the main and conflict branches!
