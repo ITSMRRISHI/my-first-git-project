@@ -1,16 +1,16 @@
-name: Simple CI Pipeline
+name: System Check CI
 
 on:
   push:
     branches: [ main ]
 
 jobs:
-  say-hello:
+  system-check:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
 
-      - name: Run My First Script
-        run: bash scripts/print-messages.sh
+      - name: Run System Health Script
+        run: bash scripts/system-check.sh
