@@ -1,0 +1,16 @@
+name: Simple CI Pipeline
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Run My First Script
+        run: bash scripts/print-message.sh
